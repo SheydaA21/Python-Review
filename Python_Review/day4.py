@@ -10,14 +10,14 @@ class Student:
         print(f"My name is {self.name} and I am {self.age} years old.")
 
 ## Create instances of the Student class ##
-Student1 = Student("Alice", 20)
-Student2 = Student("Bob", 22)
-Student3 = Student("Charlie", 19)
+student1 = Student("Alice", 20)
+student2 = Student("Bob", 22)
+student3 = Student("Charlie", 19)
 
 ## Call the introduce method for each student ##
-Student1.introduce()
-Student2.introduce()
-Student3.introduce()
+student1.introduce()
+student2.introduce()
+student3.introduce()
 
 ## Ex2: Circle class ##
 import math
@@ -76,7 +76,7 @@ i = a ** d
 print(f"The summation is: {e}")
 print(f"The difference is: {f}")
 print(f"The multiplication is: {g}")
-print(f"The devision is: {h}")
+print(f"The division is: {h}")
 print(f"The power is: {i}")
 
 ## Ex4: Broadcasting ##
@@ -85,9 +85,8 @@ print(f"{a * 5}")
 
 ## Ex5: Statistics ##
 print(f"{a + 5}")
-print(f"{a + 5}")
 print(f"The mean value of a is: {np.mean(a)}")
-print(f"The standard deviation value of a is: {np.std(a)}")
+print(f"The standard diviation value of a is: {np.std(a)}")
 print(f"The maximum value of a is: {np.max(a)}")
 print(f"The minimum value of a is: {np.min(a)}")
 print(f"The sum of components in a is: {np.sum(a)}")
@@ -108,7 +107,7 @@ b_new
 
 ## Mini Challenge: Generate a 5×5 matrix of random integers from 0–100. --> mean, max, min, first row, last column ##
 ## Create a random matrix ##
-random_matrix = np.random.randint(1,101, size=(5,5))
+random_matrix = np.random.randint(0, 101, size=(5,5))
 
 print(random_matrix)
 print(f"The mean value of the random_matrix is: {np.mean(random_matrix)}")
@@ -120,12 +119,12 @@ print(f"The last column of the random_matrix is: {np.array(random_matrix[:,-1])}
 
 ## Stretch Goal: Create a fake sensor signal ##
 import numpy as np
-## Create 1000 samples of a Gaussian signal with mean_value = 0 and standars_deviation = 1 ##
+## Create 1000 samples of a Gaussian signal with mean_value = 0 and standars_diviation = 1 ##
 signal = np.random.normal(0, 1, 1000)
 print(signal)
 
 print(f"The mean value of signal is: {np.mean(signal)}")
-print(f"The standard deviation of signal is: {np.std(signal)}")
+print(f"The standard diviation of signal is: {np.std(signal)}")
 print(f"The max value of signal is: {np.max(signal)}")
 print(f"The min value of signal is: {np.min(signal)}")
 
